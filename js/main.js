@@ -38,7 +38,6 @@ function showOptions(){
    TweenMax.to(group1, .7, {y: 15, ease: Power2.easeInOut})
    TweenMax.to(day, 0.8, { y: -20, ease: Power2.easeInOut});
    TweenMax.to(heroImage, .7, {x: 20, y: 30, scale: 1.2, ease: Power2.easeInOut})
-   
    TweenMax.to(exit, 0.5, {rotation: 180, ease: Power2.easeInOut, transformOrigin: "center center", delay: .2});
    TweenMax.staggerTo([option1, option2, option3], .75, {x: 0, ease: Power2.easeInOut}, .1)
 }
@@ -69,7 +68,6 @@ function animate(){
 
 function fadeIn(){
    gsap.to([frame, container], .5, {opacity: 1})
-
    gsap.delayedCall(.4, animate)
 }
 
