@@ -41,11 +41,6 @@ function showOptions(){
    
    TweenMax.to(exit, 0.5, {rotation: 180, ease: Power2.easeInOut, transformOrigin: "center center", delay: .2});
    TweenMax.staggerTo([option1, option2, option3], .75, {x: 0, ease: Power2.easeInOut}, .1)
-   // optionsTL.play()
-   // optionsTL
-   //    .to(option1, .75, {x: 0, ease: Power2.easeInOut })
-   //    .to(option2, .75, {x: 0, ease: Power2.easeInOut }, "-=.6")
-   //    .to(option3, .75, {x: 0, ease: Power2.easeInOut}, "-=.7")
 }
 
 function enterAnimation(){
@@ -57,14 +52,9 @@ function leaveAnimation(){
 }
 
 function addEventListeners(){
-   menu.addEventListener("mouseover", enterAnimation, false)
-   
+   menu.addEventListener("mouseover", enterAnimation, false) 
    menu.addEventListener('mouseleave', leaveAnimation, false)
-    
    menu.addEventListener("click", showOptions)
-
-   option1.addEventListener
-
    exit.addEventListener("click", exitMenu)
 }
 
